@@ -2,28 +2,28 @@
 
 /* 共通部分
 ------------------------------*/
-html{
+html {
     font-size: 100%;
 }
-body{
+body {
     font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sons-serif;
     line-height: 1.7;
     color: #432;
 }
-a{
+a {
     text-decoration: none;
 }
-img{
+img {
     max-width: 100%;
 }
 
 /*HEADER
 -------------------------------*/
-.logo{
+.logo {
     width: 210px;
     margin-top: 14px;
 }
-.main-nav{
+.main-nav {
     display: flex;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ img{
     display: flex;
     justify-content: space-between;
 }
-.wrapper{
+.wrapper {
     min-width: 1100px;
     margin: 0 auto;
     padding: 0 4%;
@@ -59,7 +59,7 @@ img{
     margin: 10px 0 42px;
 }
 /* 見出し */
-.page-title{
+.page-title {
     font-size:  5rem;
     font-family: 'Philosopher',serif;
     text-transform: uppercase;
@@ -78,7 +78,7 @@ img{
 }
 
 /*大きな背景画像*/
-.big-bg{
+.big-bg {
     background-size: cover;
     background-position: center top;
 }
@@ -88,23 +88,23 @@ img{
     background-blend-mode: hard-light;
     min-height: 100vh;
 }
-#home .page-title{
+#home .page-title {
     text-transform: none;
 }
 
 /*NEWS
 ------------------------------*/
-#news{
+#news {
     background-image: url(../images/news-bg.jpg);
     height: 270px;
     margin-bottom: 40px;
 }
 #news .page-title {
-    text-transform: center ;
+    text-align: center ;
 }
 /*フッター
 ------------------------------*/
-footer{
+footer {
     background: #432;
     text-align: center;
     padding: 26px 0;
@@ -114,12 +114,12 @@ footer p {
     font-size: 0.875rem;
 }
 /*記事部分*/
-article{
+article {
     width: 74%;
 }
 
 /*サイドバー*/
-aside{
+aside {
     width: 22%;
 }
 .news-contents {
@@ -128,12 +128,12 @@ aside{
     margin-bottom: 50px;
 }
 
-.post-info{
+.post-info {
     position: relative;
     padding-top: 4px;
     margin-bottom: 40px;
 }
-.post-date{
+.post-date {
     background: #0bd;
     border-radius: 50%;
     color: #fff;
@@ -153,47 +153,47 @@ aside{
     width: 60%;
     margin: 0 auto;
 }
-.post-title{
+.post-title {
     font-family: "Yu Mincho","YuMincho", serif;
     font-size: 2rem;
     font-weight: normal;
 }
 .post-title,
-.post-cat{
+.post-cat {
     margin-left: 120px;
 }
-article img{
+article img {
     margin-bottom: 20px;
 }
-article p{
+article p {
     margin-bottom: 1rem;
 }
-.sub-title{
+.sub-title {
     font-size: 1.375rem;
     padding: 0 8px 8px;
     border-bottom: 2px #0bd solid;
     font-weight: normal;
 }
-aside p{
+aside p {
     padding: 12px 10px;
 }
-.sub-menu{
+.sub-menu {
     margin-bottom: 60px;
     list-style: none;
 }
-.sub-menu li{
+.sub-menu li {
     border-bottom: 1px  #ddd solid;
 }
-.sub-menu a{
+.sub-menu a {
     color: #432;
     padding: 10px;
     display: block;
 }
-.sub-menu a:hover{
+.sub-menu a:hover {
     color: #0bd;
 }
-@media(max-width: 600PX){
-    h1{
+@media(max-width: 600PX) {
+    h1 {
         color: #0bd;
     }
 }
@@ -203,17 +203,58 @@ aside p{
     .page-title {
         font-size: 2.5rem;
     }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
     /*HEADER*/
-    .main-nav{
+    .main-nav {
         font-size: 1rem;
         margin-top: 10px;
     }
-    .main-nav li{
+    .main-nav li {
         margin: 0 20px;
     }
 
     /*HOME*/
-    .home-content{
+    .home-content {
         margin-top: 20px;
+    }
+    /*NEWS*/
+    .news-contents {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date ruby-span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
     }
 }
