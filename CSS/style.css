@@ -83,7 +83,7 @@ img {
     background-position: center top;
 }
 #home {
-    background-image: url(https://github.com/mna841/html/blob/main/images/main-bg.jpg?raw=true);
+    background-image: url(https://github.com/mna841/study/blob/main/images/main-bg.jpg?raw=true);
     background-color: #0bd;
     background-blend-mode: hard-light;
     min-height: 100vh;
@@ -95,7 +95,7 @@ img {
 /*NEWS
 ------------------------------*/
 #news {
-    background-image: url(https://github.com/mna841/html/blob/main/images/news-bg.jpg?raw=true);
+    background-image: url(https://github.com/mna841/study/blob/main/images/news-bg.jpg?raw=true);
     height: 270px;
     margin-bottom: 40px;
 }
@@ -289,7 +289,7 @@ aside p {
 /*MENU
 -------------------------------*/
 #menu {
-    background-image: url(https://github.com/mna841/html/blob/main/images/menu-bg.jpg?raw=true);
+    background-image: url(https://github.com/mna841/study/blob/main/images/menu-bg.jpg?raw=true);
     min-height: 100vh;
 }
 .menu-content {
@@ -323,7 +323,7 @@ aside p {
 /*COTACT
 --------------------------*/
 #contact {
-    background-image: url(https://github.com/mna841/html/blob/main/images/contact-bg.jpg?raw=true);
+    background-image: url(https://github.com/mna841/study/blob/main/images/contact-bg.jpg?raw=true);
     min-height: 100vh;
 }
 
